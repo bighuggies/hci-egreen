@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<meta charset="utf8">
 	<title>eGreen Library - Home</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -18,20 +19,16 @@
 				</ul>
 
 				<ul class="nav pull-right">
-					<li class="divider-vertical"></li>
 					<li>
 						<form class="navbar-search pull-right" action="">
 							<input type="text" class="search-query span3" placeholder="Search"></form>
 					</li>
-					<li class="divider-vertical"></li>
 					<li>
 						<a href="#">Account</a>
 					</li>
-					<li class="divider-vertical"></li>
 					<li>
 						<a href="index.html">Sign out</a>
 					</li>
-					<li class="divider-vertical"></li>
 				</ul>
 
 			</div>
@@ -41,21 +38,23 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="span12 section-heading">
+			<div class="return-link span12">
+				<a href="library.html"> <i class="icon-arrow-left"></i>
+					Browse the library...
+				</a>
+			</div>
+		</div>
+		<div class="row section-heading search-options-heading">
+			<div class="span12">
 				<h1>Search Options</h1>
 			</div>
 		</div>
+		<hr class="section-divider">
 		<div class="row">
-			<div class="span12">
-				<form class="form-horizontal">
-					<fieldset>
 
-						<div class="control-group">
-							<input id="search-txt" type="search" class="input search-keywords span6" placeholder="search keywords...">
-							<a href="search.html" class="btn btn-large btn-primary">Search</a>
-						</div>
-					</fieldset>
-				</form>
+			<div class="control-group form-horizontal span12">
+				<input id="search-txt" type="search" class="input search-keywords span6" placeholder="search keywords..." value="search keywords used">
+				<a href="search.html" class="btn btn-large btn-primary">Search</a>
 			</div>
 		</div>
 
@@ -69,7 +68,7 @@
 				</div>
 				<div id="advanced-search" class="accordion-body collapse">
 					<div class="accordion-inner">
-						<form class="form-horizontal">
+						<form class="form-horizontal" action="search.html">
 							<fieldset>
 								<div class="control-group">
 									<label class="control-label" for="input01">Author</label>
@@ -84,6 +83,12 @@
 									<label class="control-label" for="input01">Title</label>
 									<div class="controls">
 										<input type="text" class="input-xlarge" id="input01" placeholder="Title, The"></div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input01">Publisher</label>
+									<div class="controls">
+										<input type="text" class="input-xlarge" id="input01" placeholder="Penguin">
+									</div>
 								</div>
 
 								<div class="control-group">
@@ -101,6 +106,18 @@
 										<textarea class="input-xlarge" id="textarea" rows="3" placeholder="genre1, genre2, genre3"></textarea>
 									</div>
 								</div>
+								<div class="control-group">
+									<label class="control-label" for="select01">Sort by</label>
+									<div class="controls">
+										<select id="select01">
+											<option>Title</option>
+											<option>Author</option>
+											<option>Rating</option>
+											<option>Publishing Date</option>
+											<option>Publisher</option>
+										</select>
+									</div>
+								</div>
 								<div class="form-actions">
 									<button type="submit" class="btn btn-primary">Search</button>
 									<button class="btn">Cancel</button>
@@ -111,16 +128,42 @@
 				</div>
 			</div>
 		</div>
-		<hr>
- 		<div class="row">
-			<div class="span10 section-heading">
+		<div class="row section-heading search-results-heading">
+			<div class="span4">
 				<h1>Search Results</h1>
 			</div>
-			<div class="span2"><span class="pull-right">Showing 4 of 32</span></div>
+			<div class="span2 showing-x">Showing 5 of 32</div>
+			<div class="span6">
+				<div class="pagination pagination-right top-pagination">
+					<ul>
+						<li>
+							<a href="#">Prev</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">Next</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
+		<hr class="section-divider">
 		<div class="book row">
 			<div class="cover-image span2">
-				<a href="#"><img src="img/hp7.jpg" alt="Book title"></a></div>
+				<a href="#">
+					<img src="img/hp7.jpg" alt="Book title"></a>
+			</div>
 			<div class="book-info span10">
 				<h4 class="book-title">
 					<a href="#">Harry Potter and the Deathly Hallows</a>
@@ -132,10 +175,11 @@
 					<a href="#"> <strong>... (read more)</strong>
 					</a>
 				</p>
-				<span class="published-date pull-left"> <strong>Published: July 7, 2009,</strong>
+				<span class="published-date pull-left"> <strong>Published: July 7, 2009</strong>
 				</span>
 				<span class="rating pull-left">
-					<strong>Rating:</strong> <i class="icon-star"></i>
+					<strong>Rating:</strong>
+					<i class="icon-star"></i>
 					<i class="icon-star"></i>
 					<i class="icon-star"></i>
 					<i class="icon-star"></i>
@@ -148,12 +192,51 @@
 		</div>
 		<div class="book row">
 			<div class="cover-image span2">
-				<a href="#"><img src="img/dwd.jpg" alt="Book title"></a></div>
+				<a href="#">
+					<img src="img/son.jpg" alt="Book title"></a>
+			</div>
+			<div class="book-info span10">
+				<h4 class="book-title">
+					<a href="#">Shadow of Night: A Novel</a>
+				</h4>
+				<p class="book-author"> <em><a href="#">Deborah Harkness</a></em> 
+				</p>
+				<p class="book-description">
+					Deborah Harkness exploded onto the literary scene with her debut novel, A Discovery of Witches, Book One of the magical All Souls Trilogy and an international publishing phenomenon. The novel introduced Diana Bishop, Oxford scholar and reluctant witch, and the handsome geneticist and vampire Matthew Clairmont; together they found themselves at the center of a supernatural battle over an enchant
+					<a href="#">
+						<strong>... (read more)</strong>
+					</a>
+				</p>
+				<span class="published-date pull-left">
+					<strong>Published: July 10, 2012</strong>
+				</span>
+				<span class="rating pull-left">
+					<strong>Rating:</strong>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star-empty"></i>
+				</span>
+				<span class="checkout-button pull-right">
+					<button class="btn btn-primary">Checkout</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="book row">
+			<div class="cover-image span2">
+				<a href="#">
+					<img src="img/dwd.jpg" alt="Book title"></a>
+			</div>
 			<div class="book-info span10">
 				<h4 class="book-title">
 					<a href="#">A Dance with Dragons (A Song of Ice and Fire, Book 5)</a>
 				</h4>
-				<p class="book-author"> <em><a href="#">George R.R. Martin</a></em> 
+				<p class="book-author">
+					<em>
+						<a href="#">George R.R. Martin</a>
+					</em>
 				</p>
 				<p class="book-description">
 					In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance once again--beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has three times three thousand enemies, and many have set out to find her. Yet, as t
@@ -162,7 +245,7 @@
 					</a>
 				</p>
 				<span class="published-date pull-left">
-					<strong>Published: July 12, 2011,</strong>
+					<strong>Published: July 12, 2011</strong>
 				</span>
 				<span class="rating pull-left">
 					<strong>Rating:</strong>
@@ -173,13 +256,15 @@
 					<i class="icon-star"></i>
 				</span>
 				<span class="checkout-button pull-right">
-					<a href="#" class="btn btn-inverse btn-request" rel="popover" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title">Request</a>
+					<a href="#" class="btn btn-inverse btn-request" rel="popover" data-content="Requesting a book will place you in a queue of people waiting to borrow this book from the library." data-original-title="Request">Request</a>
 				</span>
 			</div>
 		</div>
 		<div class="book row">
 			<div class="cover-image span2">
-				<a href="#"><img src="img/1q84.jpg" alt="Book title"></a></div>
+				<a href="#">
+					<img src="img/1q84.jpg" alt="Book title"></a>
+			</div>
 			<div class="book-info span10">
 				<h4 class="book-title">
 					<a href="#">1Q84</a>
@@ -197,7 +282,7 @@
 					<br/>
 				</p>
 				<span class="published-date pull-left">
-					<strong>Published: October 25, 2011,</strong>
+					<strong>Published: October 25, 2011</strong>
 				</span>
 				<span class="rating pull-left">
 					<strong>Rating:</strong>
@@ -214,7 +299,9 @@
 		</div>
 		<div class="book row">
 			<div class="cover-image span2">
-				<a href="#"><img src="img/cweb.jpg" alt="Book title"></a></div>
+				<a href="#">
+					<img src="img/cweb.jpg" alt="Book title"></a>
+			</div>
 			<div class="book-info span10">
 				<h4 class="book-title">
 					<a href="#">Charlotte's Web</a>
@@ -233,7 +320,7 @@
 					</a>
 				</p>
 				<span class="published-date pull-left">
-					<strong>Published: May 9, 2006,</strong>
+					<strong>Published: May 9, 2006</strong>
 				</span>
 				<span class="rating pull-left">
 					<strong>Rating:</strong>
@@ -248,11 +335,35 @@
 				</span>
 			</div>
 		</div>
+		<div class="row">
+			<div class="pagination pagination-right">
+				<ul>
+					<li>
+						<a href="#">Prev</a>
+					</li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">Next</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<footer class="navbar">
 			<hr class="footer-line">
 			<ul class="unstyled footer-list">
 				<li>
-					<a href="sitemap.html">Site Map</a>
+					<a href="documentation.html">Documentation</a>
 				</li>
 				<li>
 					<a href="#">Help</a>

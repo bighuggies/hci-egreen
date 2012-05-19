@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<meta charset="utf8">
 	<title>eGreen Library - Home</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -18,20 +19,17 @@
 				</ul>
 
 				<ul class="nav pull-right">
-					<li class="divider-vertical"></li>
 					<li>
 						<form class="navbar-search pull-right" action="search.html">
 							<input type="text" class="search-query span3" placeholder="Search"></form>
 					</li>
-					<li class="divider-vertical"></li>
+
 					<li>
 						<a href="#">Account</a>
 					</li>
-					<li class="divider-vertical"></li>
 					<li>
 						<a href="index.html">Sign out</a>
 					</li>
-					<li class="divider-vertical"></li>
 				</ul>
 
 			</div>
@@ -41,10 +39,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="sidebar span3">
-				<h1>Browse Books</h1>
-				<hr>
-
+			<div class="sidebar span3 well">
 				<div class="genres">
 					<ul class="nav nav-list genre-list">
 						<li class="nav-header">Best Books</li>
@@ -64,7 +59,7 @@
 							<a href="#">Best Sellers</a>
 						</li>
 						<li class="divider"></li>
-						<li class="nav-header">Books Categories</li>
+						<li class="nav-header">Book Categories</li>
 						<li>
 							<a href="#">Art & Photography</a>
 						</li>
@@ -151,46 +146,150 @@
 					<span class="span6">
 						<h1>Featured Books</h1>
 					</span>
-					<span class="sort-dropdown span2 pull-right">
+				</div>
+				<hr class="section-divider">
+				<div class="book row">
+					<div class="span3">
+						<h4 class="featured-book-title"><a href="#">Incarceron</a></h4>
+						<p class="featured-book-author"> <em><a href="#">Catherine Fisher</a></em> 
+						</p>
+						<div class="featured-book-rating">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+						</div>
+
+						<a href="#">
+							<img src="img/inc.jpg" alt="Book title"></a>
+
+					</div>
+					<div class="span3">
+						<h4 class="featured-book-title"><a href="#">The Unnamed</a></h4>
+						<p class="featured-book-author"> <em><a href="#">Joshua Ferris</a></em> 
+						</p>
+						<div class="featured-book-rating">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star-empty"></i>
+						</div>
+
+						<a href="#">
+							<img src="img/tu.jpg" alt="Book title"></a>
+					</div>
+
+					<div class="span3">
+						<h4 class="featured-book-title"><a href="#">Just Kids</a></h4>
+						<p class="featured-book-author">
+							<em>
+								<a href="#">Patti Smith</a>
+							</em>
+						</p>
+						<div class="featured-book-rating">
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star-empty"></i>
+						</div>
+
+						<a href="#">
+							<img src="img/jk.jpg" alt="Book title"></a>
+					</div>
+
+				</div>
+
+				<div class="row section-heading">
+					<span class="span6">
+						<h1>Popular Books</h1>
+					</span>
+					<span class="sort-dropdown span3 pull-right">
 						<div class="btn-group sort-by pull-right">
-							<button class="btn">Sort by: Recent</button>
+							<button class="btn">Sort by: Popular</button>
 							<button class="btn dropdown-toggle" data-toggle="dropdown">
 								<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#">Featured</a>
+									<a href="#">Newest</a>
 								</li>
 								<li>
 									<a href="#">Highest rated</a>
 								</li>
 								<li>
-									<a href="#">Most checked out</a>
+									<a href="#">Most borrowed</a>
 								</li>
 
 							</ul>
 						</div>
 					</span>
 				</div>
-				<hr>
+				<hr class="section-divider">
+
 				<div class="book row">
 					<div class="cover-image span2">
-						<a href="#"><img src="img/hp7.jpg" alt="Book title"></a></div>
+						<a href="#">
+							<img src="img/hp7.jpg" alt="Book title"></a>
+					</div>
 					<div class="book-info span7">
 						<h4 class="book-title">
 							<a href="#">Harry Potter and the Deathly Hallows</a>
 						</h4>
-						<p class="book-author"> <em><a href="#">J.K. Rowling</a></em> 
+						<p class="book-author">
+							<em>
+								<a href="#">J.K. Rowling</a>
+							</em>
 						</p>
 						<p class="book-description">
 							The heart of Book 7 is a hero's mission--not just in Harry's quest for the Horcruxes, but in his journey from boy to man--and Harry faces more danger than that found in all six books combined, from the direct threat of the Death Eaters and you-know-who, to the subtle perils of losing faith in himself. Attentive readers would do well to remember Dumbledore's warning about making the choice betwe
 							<a href="#"> <strong>... (read more)</strong>
 							</a>
 						</p>
-						<span class="published-date pull-left"> <strong>Published: July 7, 2009,</strong>
+						<span class="published-date pull-left"> <strong>Published: July 7, 2009</strong>
 						</span>
 						<span class="rating pull-left">
-							<strong>Rating:</strong> <i class="icon-star"></i> <i class="icon-star"></i>
+							<strong>Rating:</strong>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
+							<i class="icon-star-empty"></i>
+						</span>
+						<span class="checkout-button pull-right">
+							<button class="btn btn-primary">Borrow</button>
+						</span>
+					</div>
+				</div>
+				<div class="book row">
+					<div class="cover-image span2">
+						<a href="#">
+							<img src="img/son.jpg" alt="Book title"></a>
+					</div>
+					<div class="book-info span7">
+						<h4 class="book-title">
+							<a href="#">Shadow of Night: A Novel</a>
+						</h4>
+						<p class="book-author">
+							<em>
+								<a href="#">Deborah Harkness</a>
+							</em>
+						</p>
+						<p class="book-description">
+							Deborah Harkness exploded onto the literary scene with her debut novel, A Discovery of Witches, Book One of the magical All Souls Trilogy and an international publishing phenomenon. The novel introduced Diana Bishop, Oxford scholar and reluctant witch, and the handsome geneticist and vampire Matthew Clairmont; together they found themselves at the center of a supernatural battle over an enchant
+							<a href="#">
+								<strong>... (read more)</strong>
+							</a>
+						</p>
+						<span class="published-date pull-left">
+							<strong>Published: July 10, 2012</strong>
+						</span>
+						<span class="rating pull-left">
+							<strong>Rating:</strong>
+							<i class="icon-star"></i>
+							<i class="icon-star"></i>
 							<i class="icon-star"></i>
 							<i class="icon-star"></i>
 							<i class="icon-star-empty"></i>
@@ -200,14 +299,20 @@
 						</span>
 					</div>
 				</div>
+
 				<div class="book row">
 					<div class="cover-image span2">
-						<a href="#"><img src="img/dwd.jpg" alt="Book title"></a></div>
+						<a href="#">
+							<img src="img/dwd.jpg" alt="Book title"></a>
+					</div>
 					<div class="book-info span7">
 						<h4 class="book-title">
 							<a href="#">A Dance with Dragons (A Song of Ice and Fire, Book 5)</a>
 						</h4>
-						<p class="book-author"> <em><a href="#">George R.R. Martin</a></em> 
+						<p class="book-author">
+							<em>
+								<a href="#">George R.R. Martin</a>
+							</em>
 						</p>
 						<p class="book-description">
 							In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance once again--beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has three times three thousand enemies, and many have set out to find her. Yet, as t
@@ -216,7 +321,7 @@
 							</a>
 						</p>
 						<span class="published-date pull-left">
-							<strong>Published: July 12, 2011,</strong>
+							<strong>Published: July 12, 2011</strong>
 						</span>
 						<span class="rating pull-left">
 							<strong>Rating:</strong>
@@ -233,7 +338,9 @@
 				</div>
 				<div class="book row">
 					<div class="cover-image span2">
-						<a href="#"><img src="img/1q84.jpg" alt="Book title"></a></div>
+						<a href="#">
+							<img src="img/1q84.jpg" alt="Book title"></a>
+					</div>
 					<div class="book-info span7">
 						<h4 class="book-title">
 							<a href="#">1Q84</a>
@@ -251,7 +358,7 @@
 							<br/>
 						</p>
 						<span class="published-date pull-left">
-							<strong>Published: October 25, 2011,</strong>
+							<strong>Published: October 25, 2011</strong>
 						</span>
 						<span class="rating pull-left">
 							<strong>Rating:</strong>
@@ -262,13 +369,15 @@
 							<i class="icon-star-empty"></i>
 						</span>
 						<span class="checkout-button pull-right">
-							<button class="btn btn-primary">Checkout</button>
+							<button class="btn btn-primary">Borrow</button>
 						</span>
 					</div>
 				</div>
 				<div class="book row">
 					<div class="cover-image span2">
-						<a href="#"><img src="img/cweb.jpg" alt="Book title"></a></div>
+						<a href="#">
+							<img src="img/cweb.jpg" alt="Book title"></a>
+					</div>
 					<div class="book-info span7">
 						<h4 class="book-title">
 							<a href="#">Charlotte's Web</a>
@@ -287,7 +396,7 @@
 							</a>
 						</p>
 						<span class="published-date pull-left">
-							<strong>Published: May 9, 2006,</strong>
+							<strong>Published: May 9, 2006</strong>
 						</span>
 						<span class="rating pull-left">
 							<strong>Rating:</strong>
@@ -298,11 +407,32 @@
 							<i class="icon-star-empty"></i>
 						</span>
 						<span class="checkout-button pull-right">
-							<button class="btn btn-primary">Checkout</button>
+							<button class="btn btn-primary">Borrow</button>
 						</span>
 					</div>
 				</div>
-
+				<div class="row pagination pagination-right">
+					<ul>
+						<li>
+							<a href="#">Prev</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">Next</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -310,7 +440,7 @@
 			<hr class="footer-line">
 			<ul class="unstyled footer-list">
 				<li>
-					<a href="sitemap.html">Site Map</a>
+					<a href="documentation.html">Documentation</a>
 				</li>
 				<li>
 					<a href="#">Help</a>

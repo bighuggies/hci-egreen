@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<meta charset="utf8">
 	<title>eGreen Library - Home</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -18,15 +19,12 @@
 				</ul>
 
 				<ul class="nav pull-right">
-					<li class="divider-vertical"></li>
 					<li>
 						<a href="register.html">Register</a>
 					</li>
-					<li class="divider-vertical"></li>
 					<li>
 						<a href="#">Sign in</a>
 					</li>
-					<li class="divider-vertical"></li>
 				</ul>
 
 			</div>
@@ -42,7 +40,7 @@
 		</div>
 		<div class="row">
 			<div id="search-form" class="span12">
-				<form class="form-horizontal">
+				<form action="search.html" class="form-horizontal">
 					<fieldset>
 						<div class="control-group">
 							<input id="search-txt" type="search" class="input search-index span7" placeholder="find a book...">
@@ -51,19 +49,23 @@
 						<p>Alternatively...</p>
 						<div class="control-group">
 							<a href="library.html" class="btn btn-large btn-primary">Browse the Library</a>
-							<a href="#" class="btn btn-large">What is eGreen Library?</a>
+							<a href="#" class="btn btn-large" data-toggle="collapse" data-target="#info">What is eGreen Library?</a>
 
 						</div>
 					</fieldset>
 				</form>
 			</div>
 		</div>
-
+		<div class="row">
+			<div id="info" class="span12 collapse">
+				<p>eGreen library is a digital library that allows you to borrow eBooks for your favourite eReader. We offer multiple plans which will let you hire as many books as you need to keep yourself entertained. For more infomation about eGreen Library, please refer to <a href="#">our information page.</a> For information about eBooks and devices or programs which you can use to read them, please refer to our <a href="#">help page.</a></p>
+			</div>
+		</div>
 		<footer class="navbar navbar-fixed-bottom pull-right">
 			<hr class="footer-line">
 			<ul class="unstyled footer-list">
 				<li>
-					<a href="sitemap.html">Site Map</a>
+					<a href="documentation.html">Documentation</a>
 				</li>
 				<li>
 					<a href="#">Help</a>
@@ -87,5 +89,7 @@
 	<!-- Javascript loading -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>

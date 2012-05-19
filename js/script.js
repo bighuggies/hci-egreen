@@ -37,3 +37,7 @@ $(".btn-request").hover(function(inEvent) {
 }, function(outEvent) {
 	$(this).popover('toggle');
 });
+
+$("#accept-tandc").click(function(event) {
+	window.location="library.html";
+});
