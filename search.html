@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<title>eGreen Library - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<a href="#top"></a>
+		<div class="navbar-inner">
+			<div class="container">
+
+				<ul class="nav">
+					<li>
+						<a class="brand" href="index.html">eGreen Library</a>
+					</li>
+				</ul>
+
+				<ul class="nav pull-right">
+					<li class="divider-vertical"></li>
+					<li>
+						<form class="navbar-search pull-right" action="">
+							<input type="text" class="search-query span3" placeholder="Search"></form>
+					</li>
+					<li class="divider-vertical"></li>
+					<li>
+						<a href="#">Account</a>
+					</li>
+					<li class="divider-vertical"></li>
+					<li>
+						<a href="index.html">Sign out</a>
+					</li>
+					<li class="divider-vertical"></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="span12 section-heading">
+				<h1>Search Options</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
+				<form class="form-horizontal">
+					<fieldset>
+
+						<div class="control-group">
+							<input id="search-txt" type="search" class="input search-keywords span6" placeholder="search keywords...">
+							<a href="search.html" class="btn btn-large btn-primary">Search</a>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="accordion-group span12">
+				<div class="advanced-search accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" href="#advanced-search">
+						Advanced search options <i id="advanced-search-icon" class="icon-chevron-down pull-right"></i>
+					</a>
+
+				</div>
+				<div id="advanced-search" class="accordion-body collapse">
+					<div class="accordion-inner">
+						<form class="form-horizontal">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label" for="input01">Author</label>
+									<div class="controls">
+										<input type="text" class="input-xlarge" id="input01" placeholder="Doe, Jane">
+										<p class="help-block">
+											Enter the author's name in any way you like. The order of the names will not matter.
+										</p>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="input01">Title</label>
+									<div class="controls">
+										<input type="text" class="input-xlarge" id="input01" placeholder="Title, The"></div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="optionsCheckbox">Availability</label>
+									<div class="controls">
+										<label class="checkbox">
+											<input type="checkbox" id="optionsCheckbox" value="option1">
+											Show books that are on request (not available to check out immediately).
+										</label>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="textarea">Genres</label>
+									<div class="controls">
+										<textarea class="input-xlarge" id="textarea" rows="3" placeholder="genre1, genre2, genre3"></textarea>
+									</div>
+								</div>
+								<div class="form-actions">
+									<button type="submit" class="btn btn-primary">Search</button>
+									<button class="btn">Cancel</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+ 		<div class="row">
+			<div class="span10 section-heading">
+				<h1>Search Results</h1>
+			</div>
+			<div class="span2"><span class="pull-right">Showing 4 of 32</span></div>
+		</div>
+		<div class="book row">
+			<div class="cover-image span2">
+				<a href="#"><img src="img/hp7.jpg" alt="Book title"></a></div>
+			<div class="book-info span10">
+				<h4 class="book-title">
+					<a href="#">Harry Potter and the Deathly Hallows</a>
+				</h4>
+				<p class="book-author"> <em><a href="#">J.K. Rowling</a></em> 
+				</p>
+				<p class="book-description">
+					The heart of Book 7 is a hero's mission--not just in Harry's quest for the Horcruxes, but in his journey from boy to man--and Harry faces more danger than that found in all six books combined, from the direct threat of the Death Eaters and you-know-who, to the subtle perils of losing faith in himself. Attentive readers would do well to remember Dumbledore's warning about making the choice betwe
+					<a href="#"> <strong>... (read more)</strong>
+					</a>
+				</p>
+				<span class="published-date pull-left"> <strong>Published: July 7, 2009,</strong>
+				</span>
+				<span class="rating pull-left">
+					<strong>Rating:</strong> <i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star-empty"></i>
+				</span>
+				<span class="checkout-button pull-right">
+					<button class="btn btn-primary">Checkout</button>
+				</span>
+			</div>
+		</div>
+		<div class="book row">
+			<div class="cover-image span2">
+				<a href="#"><img src="img/dwd.jpg" alt="Book title"></a></div>
+			<div class="book-info span10">
+				<h4 class="book-title">
+					<a href="#">A Dance with Dragons (A Song of Ice and Fire, Book 5)</a>
+				</h4>
+				<p class="book-author"> <em><a href="#">George R.R. Martin</a></em> 
+				</p>
+				<p class="book-description">
+					In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance once again--beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has three times three thousand enemies, and many have set out to find her. Yet, as t
+					<a href="#">
+						<strong>... (read more)</strong>
+					</a>
+				</p>
+				<span class="published-date pull-left">
+					<strong>Published: July 12, 2011,</strong>
+				</span>
+				<span class="rating pull-left">
+					<strong>Rating:</strong>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+				</span>
+				<span class="checkout-button pull-right">
+					<a href="#" class="btn btn-inverse btn-request" rel="popover" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title">Request</a>
+				</span>
+			</div>
+		</div>
+		<div class="book row">
+			<div class="cover-image span2">
+				<a href="#"><img src="img/1q84.jpg" alt="Book title"></a></div>
+			<div class="book-info span10">
+				<h4 class="book-title">
+					<a href="#">1Q84</a>
+				</h4>
+				<p class="book-author">
+					<em>
+						<a href="#">Haruki Murakami</a>
+					</em>
+				</p>
+				<p class="book-description">
+					The year is 1984 and the city is Tokyo. A young woman named Aomame follows a taxi driver’s enigmatic suggestion and begins to notice puzzling discrepancies in the world around her. She has entered, she realizes, a parallel existence, which she calls 1Q84 -“Q is for ‘question mark.’ A world that bears a question.” Meanwhile, an aspiring writer named Tengo takes on a suspect ghostwriting project.
+					<a href="#">
+						<strong>... (read more)</strong>
+					</a>
+					<br/>
+				</p>
+				<span class="published-date pull-left">
+					<strong>Published: October 25, 2011,</strong>
+				</span>
+				<span class="rating pull-left">
+					<strong>Rating:</strong>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star-empty"></i>
+				</span>
+				<span class="checkout-button pull-right">
+					<button class="btn btn-primary">Checkout</button>
+				</span>
+			</div>
+		</div>
+		<div class="book row">
+			<div class="cover-image span2">
+				<a href="#"><img src="img/cweb.jpg" alt="Book title"></a></div>
+			<div class="book-info span10">
+				<h4 class="book-title">
+					<a href="#">Charlotte's Web</a>
+				</h4>
+				<p class="book-author">
+					<em>
+						<a href="#">E. B. White</a>
+					</em>
+				</p>
+				<p class="book-description">
+					Charlotte's Web is the story of a little girl named Fern who loved a little pig named Wilbur-and of Wilbur's dear friend Charlotte A. Cavatica, a beautiful large grey spider who lived with Wilbur in the barn.
+
+							With the help of Templeton, the rat who never did anything for anybody unless there was something in it for him, and by a wonderfully clever plan of her own, Charlotte saved the li
+					<a href="#">
+						<strong>... (read more)</strong>
+					</a>
+				</p>
+				<span class="published-date pull-left">
+					<strong>Published: May 9, 2006,</strong>
+				</span>
+				<span class="rating pull-left">
+					<strong>Rating:</strong>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-star-empty"></i>
+					<i class="icon-star-empty"></i>
+				</span>
+				<span class="checkout-button pull-right">
+					<button class="btn btn-primary">Checkout</button>
+				</span>
+			</div>
+		</div>
+		<footer class="navbar">
+			<hr class="footer-line">
+			<ul class="unstyled footer-list">
+				<li>
+					<a href="sitemap.html">Site Map</a>
+				</li>
+				<li>
+					<a href="#">Help</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="mailto:ahug048@aucklanduni.ac.nz">Contact</a>
+				</li>
+				<li>
+					<a href="#top">Top</a>
+				</li>
+				<li>
+					<a href="#">Administrate</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Javascript loading -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

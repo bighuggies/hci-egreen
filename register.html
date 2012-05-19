@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<title>eGreen Library - Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<a href="#top"></a>
+		<div class="navbar-inner">
+			<div class="container">
+
+				<ul class="nav">
+					<li>
+						<a class="brand" href="index.html">eGreen Library</a>
+					</li>
+				</ul>
+
+				<ul class="nav pull-right">
+					<li class="divider-vertical"></li>
+					<li>
+						<a href="register.html">Register</a>
+					</li>
+					<li class="divider-vertical"></li>
+					<li>
+						<a href="#">Sign in</a>
+					</li>
+					<li class="divider-vertical"></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div id="plans-header" class="row">
+			<div class="span12">
+				<h1>Choose a plan</h1>
+			</div>
+		</div>
+
+		<div id="plans" class="row registration-section">
+
+			<div id="plan-one" class="plan span6 pull-left plan-clicked">
+				<div class="hero-unit btn">
+					<h1>Alpha</h1>
+					<p>For casual readers and young adults</p>
+					<ul class="plan-list">
+						<li>$10 per month</li>
+						<li>12 books per month</li>
+						<li>3 books at a time</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="plan-two" class="plan span6 pull-right">
+				<div class="hero-unit btn">
+					<h1>Omega</h1>
+					<p>For heavy readers and book lovers</p>
+					<ul class="plan-list">
+						<li >$20 per month</li>
+						<li>50 books per month</li>
+						<li>10 books at a time</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div id="cust-info-header" class="row">
+			<div class="span12">
+				<h1>Enter your information</h1>
+			</div>
+		</div>
+
+		<div id="cust-info" class="row registration-section">
+
+			<div class="span12">
+				<form class="form-horizontal">
+					<fieldset>
+
+						<div class="control-group">
+							<label class="control-label" for="display-name">Display name</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" id="display-name">
+								<p class="help-block">
+									This is the name that will be used to address you on the site and in communications from eGreen Library
+								</p>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="email">E-mail</label>
+							<div class="controls">
+								<input type="email" class="input-xlarge" id="email" placeholder="example@example.com"></div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input type="password" class="input-xlarge" id="password"></div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="confirm-password">Confirm password</label>
+							<div class="controls">
+								<input type="password" class="input-xlarge" id="confirm-password"></div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="name">Name</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" id="name" placeholder="First and last names"></div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="address">Address</label>
+							<div class="controls">
+								<textarea class="input-xlarge" id="address" rows="3" placeholder="Your street address and area code"></textarea>
+							</div>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div id="billing-header" class="row">
+			<div class="span12">
+				<h1>Billing information</h1>
+			</div>
+		</div>
+
+		<div id="billing" class="row registration-section">
+
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="span12">
+
+						<div class="control-group">
+							<label class="control-label">Card type</label>
+							<div class="controls">
+								<label class="radio">
+									<input type="radio" name="card-type" id="visa-option" value="visa" checked="">Visa</label>
+								<label class="radio">
+									<input type="radio" name="card-type" id="mastercard-option" value="mastercard">Mastercard</label>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="card-name">Name on card</label>
+							<div class="controls">
+								<input type="text" class="input-xlarge" id="card-name"></div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="card-number">Card number</label>
+							<div class="controls">
+								<input type="text" class="input span2" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+								<input type="text" class="input-small span1" id="card-security-number" placeholder="XXX">
+								<p class="help-block">
+									Your sixteen digit card number followed by the <abbr title="These three numbers are found on the back of your card" class="initialism">CSC</abbr>
+								</p>
+
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="card-expiry">Expiry date</label>
+							<div class="controls">
+								<select id="card-expiry-month" class="span2">
+									<option>January</option>
+									<option>February</option>
+									<option>March</option>
+									<option>April</option>
+									<option>May</option>
+									<option>June</option>
+									<option>July</option>
+									<option>August</option>
+									<option>September</option>
+									<option>October</option>
+									<option>November</option>
+									<option>December</option>
+								</select>
+								<select id="card-expiry-year" class="span2">
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+									<option>2016</option>
+								</select>
+
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="billing-address">Billing Address</label>
+							<div class="controls">
+								<textarea class="input-xlarge" id="billing-address" rows="3" placeholder="Street address and area code"></textarea>
+								<p class="help-block">The street address and area code associated with your card</p>
+
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<hr>
+
+		<div class="modal fade" id="tandcmodal">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">×</button>
+				<h3>Terms and Conditions</h3>
+			</div>
+			<div class="modal-body">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					<strong>You must accept these terms and conditions in order to register for eGreen Library. If you click accept, your credit card will be charged for the amount of your chosen plan.</strong>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+				<a href="library.html" class="btn btn-primary" data-dismiss="modal">Accept</a>
+			</div>
+		</div>
+
+		<div class="form-actions registration-submit">
+			<a href="#" class="btn btn-large btn-primary" id="register" data-target="#tandcmodal" data-toggle="modal">Register</a>
+			<a href="index.html" class="btn btn-large" >Cancel</a>
+		</div>
+
+		<footer class="navbar">
+			<hr class="footer-line">
+			<ul class="unstyled footer-list">
+				<li>
+					<a href="sitemap.html">Site Map</a>
+				</li>
+				<li>
+					<a href="#">Help</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="mailto:ahug048@aucklanduni.ac.nz">Contact</a>
+				</li>
+				<li>
+					<a href="#top">Top</a>
+				</li>
+				<li>
+					<a href="#">Administrate</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Javascript loading -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
